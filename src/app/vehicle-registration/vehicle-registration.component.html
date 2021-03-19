@@ -1,0 +1,111 @@
+<div class="">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" style="margin-left: 10px;" href="/home">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="update-profile">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact us</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="navbar-nav">
+                <li class="float-right" style="margin-right: 20px;">
+                    <a class="nav-link" style="cursor: pointer;" (click)="onLogout()">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="container">
+    <h4 style="text-align: center; margin: 20px;">Vehicle Registration</h4>
+    <form (ngSubmit)="onSubmit()">
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Vehicle Class:</label>
+                    <input type="text"  required [(ngModel)]="vehicle.vehicleClass"
+                        name="vehicleClass" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Vehicle Type</label>
+                    <select class="form-control " required [(ngModel)]="vehicle.vehicleType" name="vehicleType"
+                        id="inlineFormCustomSelectPref">
+                        <option value="TwoWheeler" >TwoWheeler</option>
+                        <option value="ThreeWheeler">ThreeWheeler</option>
+                        <option value="FourWheeler">FourWheeler</option>
+                        <option value="LWV">LWV</option>
+                        <option value="HWV">HWV</option>
+                    </select>
+                </div>
+               
+                <div class="form-group">
+                    <label for="">Dealer Name:</label>
+                    <input type="text" required name="dealerName" [(ngModel)]="vehicle.dealerName" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">company:</label>
+                    <input type="text" required [(ngModel)]="vehicle.company" name="company" class="form-control">
+                </div>
+                <div class="form-group ">
+                    <label for="manufactureYear"> manufactureYear</label>
+                    <input class="form-control" type="date" value="2011-08-19" name="manufactureYear" required
+                        [(ngModel)]="vehicle.manufactureYear" id="example-date-input">
+                </div>
+                <div class="form-group">
+                    <label for="">capacity:</label>
+                    <input type="text" name="capacity" required [(ngModel)]="vehicle.capacity" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    <label for="">chassiNumber:</label>
+                    <input type="text" name="chassiNumber" required [(ngModel)]="vehicle.chassiNumber"
+                        class="form-control">
+                </div>
+
+                <div class="form-group ">
+                    <label for="dateOfBirth">engineNumber </label>
+                    <input class="form-control" type="text" name="engineNumber" required
+                        [(ngModel)]="vehicle.engineNumber" id="example-date-input">
+                </div>
+                <div class="form-group">
+                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">fuelType</label>
+                    <select class="form-control " required [(ngModel)]="vehicle.fuelType" name="fuelType"
+                        id="inlineFormCustomSelectPref">
+                        <option value="Petrol" selected>Petrol</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="CNG">CNG</option>
+                        <option value="Electric">Electric</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Colour:</label>
+                    <input type="text" name="colour" required [(ngModel)]="vehicle.colour" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">horsePower:</label>
+                    <input type="text" name="horsePower" required [(ngModel)]="vehicle.horsePower" class="form-control">
+                </div>
+
+
+            </div>
+            <div class="form-group">
+
+                <button type="submit" style="margin-top: 10px;" class="btn btn-success float-right">Register</button>
+            </div>
+        </div>
+
+    </form>
+</div>

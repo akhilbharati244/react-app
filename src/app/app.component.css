@@ -1,0 +1,28 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(../assets/login1.jpg);
+    
+}
+.heading{
+
+    padding: 0;
+    /* margin: 10px; */
+    text-align: center;
+    /* border: 1px solid black; */
+    font-family: 'Baloo Bhai 2', cursive;
+    /* background-color: honeydew; */
+    border-bottom: 3px solid black;
+}
+.heading h2{
+    font-size: 50px;
+    margin: 20px;
+    /* text-shadow: 0 0 5px #a39d9d; */
+}
+.heading-icon{
+    display: inline-block;
+}
+.heading-icon img{
+position:absolute;
+left: 20px;
+}

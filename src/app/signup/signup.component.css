@@ -1,0 +1,19 @@
+/* div .login{
+    height: 550px;
+    width: 500px;
+    position: absolute;
+    left: 0;right: 0;bottom: 0;top: 0;
+    margin: auto;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px 5px lightgrey;
+    background-color: blanchedalmond;
+}
+.login h2{
+    text-align: center;
+} */
+
+textarea {
+    resize: none;
+  }

@@ -1,0 +1,13 @@
+.main{
+    /* border: 1px solid black; */
+    background-image: url(https://www.itl.cat/downwall/Twoww_road-wallpaper-bike-race-road-background/);
+    position: absolute;
+    margin: auto;
+    top: 0;right: 0;left: 0;bottom: 0;
+    height: 300px;
+    width: 30%;
+    
+}
+body{
+    background-color: blanchedalmond;
+}

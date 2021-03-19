@@ -1,0 +1,202 @@
+.left{
+    float:left;
+    width:15%;
+    /* background-color: lightgoldenrodyellow; */
+    height: 420px;
+    /* border: 1px solid black; */
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(214,240,242,0.7945553221288515) 0%, rgba(0,212,255,1) 100%);
+
+}
+.middle{
+    padding-top: 30px;
+    float:left;
+    width:70%;
+    background-color: lightgray;
+    height: 420px;
+    /* border: 1px solid black; */
+    background: url(https://parivahan.gov.in/parivahan//sites/all/themes/newtheme/cdn/icons/slider-background.png);
+
+}
+.right{
+    float: right;
+    width:15%;
+    /* background-color: lightgoldenrodyellow; */
+    height: 420px;
+    /* border: 1px solid black; */
+
+}
+ .footer-home{
+  height: 140px;
+  background-color:lightblue;
+
+ 
+}
+.footer-home p{
+  text-align: center;
+  color:black;
+  line-height: 100px;
+} 
+.main{
+  width: 100%;
+  height: 420px;
+  background-image: url(https://proudgator.com/wp-content/uploads/2017/01/Orange-to-Blue-Gradient-Background.jpg);
+}
+.name{
+  padding: 5px;
+  /* background-color: lightgrey; */
+  font-weight: bold;
+  padding-left: 10px;
+  
+}
+h4 a{
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+h4 a:hover{
+    color: cornsilk;
+    font-size: 25px;
+}
+.last{
+    background: url(https://parivahan.gov.in/parivahan//sites/all/themes/newtheme/cdn/icons/slider-background.png);
+    width: 100%;
+    height: 100px;
+}
+.mid{
+  position: relative;
+  
+  left: 50px;
+}
+.news{
+  height: 420px;
+  /* border: 1px solid black; */
+  overflow: scroll;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(214,240,242,0.7945553221288515) 0%, rgba(0,212,255,1) 100%);
+}
+.news h5{
+  text-align: center;
+  /* background-color: cornflowerblue; */
+  height: 30px;
+  /* border: 1px solid black; */
+  border-bottom: 2px solid black;
+}
+a:hover{
+
+  color: white;
+  font-weight: bold;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.heading{
+
+    padding: 0;
+    /* margin: 10px; */
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Baloo Bhai 2', cursive;
+    /* background-color: honeydew; */
+}
+.heading h2{
+    font-size: 50px;
+    margin: 20px;
+    /* text-shadow: 0 0 5px #a39d9d; */
+}
+.nav{
+    margin: 0;
+}
+
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+  
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-md-6 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-md-6 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+  }
+
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+  .imgicon img{
+     
+        width: 66px;
+        height: 66px;
+        -webkit-transition: 2s;
+        transition: 2s;
+    
+  }
+  .heading-icon{
+      display: inline-block;
+  }
+  .heading-icon img{
+position:absolute;
+left: 20px;
+}
+.footer{
+    height: 100px;
+    /* background-color: black; */
+  
+   
+}
+.footer p{
+    text-align: center;
+    color: white;
+    line-height: 100px;
+}

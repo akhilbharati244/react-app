@@ -1,0 +1,136 @@
+<div class="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" style="margin-left: 10px;" href="/update-profile">Profile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact us</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="navbar-nav">
+                <li class="float-right" style="margin-right: 20px;">
+                    <a class="nav-link" style="cursor: pointer;" (click)="onLogout()" >Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+    <h2>Profile</h2>
+    <form (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text"  required [(ngModel)]="user.firstName" name="firstName"  class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Email:</label>
+                    <input type="email"  placeholder="abc@test.com" required [(ngModel)]="user.email" name="email"  class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Mobile:</label>
+                    <input type="number" required name="contactNo" [(ngModel)]="user.contactNo" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">State</label>
+                    <select class="form-control " required [(ngModel)]="user.state" name="state"
+                        id="inlineFormCustomSelectPref">
+                        <option value="Maharashtra" selected>Maharashtra</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Kerala">Kerala</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">City</label>
+                    <select class="form-control " required [(ngModel)]="user.city" name="city"
+                        id="inlineFormCustomSelectPref">
+                        <option value="Mumbai" selected>Munmbai</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Satara">Satara</option>
+                        <option value="Kolhapur">Kolhapur</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Address:</label>
+                    <textarea name="address" required [(ngModel)]="user.address" id="" cols="30" rows="2"
+                        class="form-control"></textarea>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    <label for="">Last Name:</label>
+                    <input type="text" name="lastName" required [(ngModel)]="user.lastName" class="form-control">
+                </div>
+                <div class="form-group" style="margin-top: 20px;margin-bottom: 20px;">
+                    <label for="">Gender:</label>
+                    <div class="form-check form-check-inline">
+                        <input style="margin-left: 10px;" required [(ngModel)]="user.gender" class="form-check-input"
+                            type="radio" name="gender" id="inlineRadio1" value="Male">
+                        <label class="form-check-label" for="inlineRadio1">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" required [(ngModel)]="user.gender" type="radio" name="gender"
+                            id="inlineRadio2" value="Female">
+                        <label class="form-check-label" for="inlineRadio2">Female</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" required [(ngModel)]="user.gender" type="radio" name="gender"
+                            id="inlineRadio2" value="Other">
+                        <label class="form-check-label" for="inlineRadio2">Other</label>
+                    </div>
+                </div>
+
+                <div class="form-group ">
+                    <label for="dateOfBirth" > Birth Date</label>
+                      <input class="form-control" type="date" value="2011-08-19" name="dateOfBirth" required [(ngModel)]="user.dateOfBirth" id="example-date-input">
+                  </div>
+                <div class="form-group">
+                    <label for="">Blood Group:</label>
+                    <input type="text" name="bloodGroup" required [(ngModel)]="user.bloodGroup" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Aadhar Number:</label>
+                    <input type="text" name="aadharNumber" required [(ngModel)]="user.aadharNumber"
+                        class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Pan Number:</label>
+                    <input type="text" name="panNumber" required [(ngModel)]="user.panNumber" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Education Qualification</label>
+                    <select class="form-control " required [(ngModel)]="user.eduQualification" name="eduQualification"
+                        id="inlineFormCustomSelectPref">
+                        <option value="HSC" selected>HSC</option>
+                        <option value="GRADUATE">GRADUATE</option>
+                        <option value="POST GRADUATE">POST GRADUATE</option>
+                        <option value="PHD">PHD</option>
+                        <option value="OTHER">OTHER</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+
+                <button type="submit" style="margin-top: 10px;" class="btn btn-success float-right">Update</button>
+            </div>
+        </div>
+    </form>
+
+
+</div>
